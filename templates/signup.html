@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign up</title>
+</head>
+<body>
+<h2>Sign up here!</h2>
+<form action="signup_handler" method="post">
+<table id="data_input">
+    <tr><td>Surname:</td>
+            <td><input type="text" name="surname"></td></tr>
+    <tr><td>Name:</td>
+            <td><input type="text" name="name"></td></tr>
+    <tr><td>Patronymic:</td>
+            <td><input type="text" name="patronymic"></td></tr>
+    <tr><td>Email:</td>
+            <td><input type="text" name="email"></td></tr>
+    <tr><td>Password:</td>
+            <td><input type="password" name="password1"></td></tr>
+    <tr><td>Confirm password:</td>
+            <td><input type="password" name="password2"></td></tr>
+    <tr><td>ZNO result in Ukrainian:</td>
+            <td><input type="number" name="ukr" min="100" max="200"></td></tr>
+    <tr><td>ZNO result in mathematics:</td>
+            <td><input type="number" name="math" min="100" max="200"></td></tr>
+    <tr><td>ZNO result in physics or English:</td>
+            <td><input type="number" name="third" min="100" max="200"></td></tr>
+    <tr><td>Certificate average grade:</td>
+            <td><input type="number" name="certificate"
+                       min="1" max="12" step="0.1"></td></tr>
+    <tr><td>Points for extra achievements (total):</td>
+            <td><input type="number" name="extra" min="0" max="30"></td></tr>
+</table>
+    <input type="submit" value="OK">
+</form>
+
+</body>
+</html>
