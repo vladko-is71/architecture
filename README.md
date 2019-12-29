@@ -5,4 +5,4 @@ Lecturer: V. D. Popenko
 
 The project is being developed using Python language and Flask framework.
 
-It can be viewed by the link: architecture-kpi.herokuapp.com
+It can be viewed by the link: https://architecture-kpi.herokuapp.com/
