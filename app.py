@@ -1,3 +1,5 @@
+import json
+import requests
 from DataValidator import DataValidator
 from PasswordHasher import PasswordHasher
 from flask import Flask, render_template, request
@@ -115,7 +117,12 @@ app = Flask(__name__)
 
 @app.route('/')
 def welcome():
-    return render_template('main.html')
+    weather_url = 'http://api.openweathermap.org/data/2.5/weather?q=Kyiv,ua&APPID=94a623b565f3f96b4137c967ef3ad363'
+    response = requests.get(weather_url)
+    final = json.loads(response.text)
+    weather_short = {'description': final['weather'][0]['description'],
+                     'temperature': str(Decimal(str(final['main']['temp']))-Decimal('273.15'))}
+    return render_template('main.html', weather_short=weather_short)
 
 
 @app.route('/login')
