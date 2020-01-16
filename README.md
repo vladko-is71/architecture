@@ -10,3 +10,5 @@ Currently, the project contains:
 2) Start page and signup form
 
 It can be viewed by the link: https://architecture-kpi.herokuapp.com/
+
+You can also clone the repository and deploy it on Heroku by connecting it with your GitHub repository.
